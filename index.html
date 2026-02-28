@@ -559,6 +559,115 @@
       text-align: right;
     }
 
+    /* ── WORK CATEGORIES ── */
+    .work-category-block {
+      margin-top: 3.5rem;
+    }
+
+    .work-category-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.65rem;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 0;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid var(--amber-dim);
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .work-category-label::before {
+      content: '';
+      display: inline-block;
+      width: 0.5rem;
+      height: 0.5rem;
+      background: var(--amber);
+    }
+
+    .work-company-block {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .work-company-header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 2rem;
+      padding: 1.5rem 0 0.8rem;
+    }
+
+    .work-company-name {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.8rem;
+      letter-spacing: 0.04em;
+      color: var(--white);
+      line-height: 1;
+    }
+
+    .work-company-type {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--amber);
+      border: 1px solid var(--amber-dim);
+      padding: 0.3rem 0.7rem;
+      white-space: nowrap;
+    }
+
+    .work-company-jobs {
+      padding: 0 0 1.2rem 1.2rem;
+      border-left: 2px solid var(--border);
+      margin-left: 0.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .work-job-item {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: start;
+      gap: 2rem;
+      padding: 0.7rem 0;
+      border-bottom: 1px solid rgba(34,34,34,0.6);
+    }
+
+    .work-job-item:last-child { border-bottom: none; }
+
+    .work-job-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text);
+      margin-bottom: 0.2rem;
+    }
+
+    .work-job-desc {
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .work-job-year {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.75rem;
+      color: var(--muted);
+      letter-spacing: 0.1em;
+      text-align: right;
+      white-space: nowrap;
+      margin-top: 0.1rem;
+    }
+
+    .work-company-misc {
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.6;
+      padding-bottom: 1rem;
+    }
+
     /* ── DESKS / SKILLS ── */
     .skills-section {
       background: var(--surface);
@@ -946,56 +1055,188 @@
       <h2 class="section-title">Selected Work</h2>
       <div class="section-divider"></div>
     </div>
-    <div class="work-list">
-      <div class="work-item reveal">
-        <div>
-          <div class="work-title">Birmingham City FC Stadium Reveal</div>
-          <div class="work-sub">Stage Tech / Monitor Engineer · Digbeth Location Studios · Globally-covered event. Managed QL2 &amp; Rio stageboxes, Bolero comms, multi-device Dante network. Built IEM mixes and troubleshot press feed Dante issues under time pressure.</div>
+
+    <!-- OB -->
+    <div class="work-category-block reveal">
+      <div class="work-category-label">Outside Broadcast</div>
+
+      <!-- QTV -->
+      <div class="work-company-block">
+        <div class="work-company-header">
+          <div class="work-company-name">QTV</div>
+          <div class="work-company-type">OB · Broadcast</div>
         </div>
-        <div class="work-tag">Monitors · Dante</div>
-        <div class="work-year">Nov 2025</div>
+        <div class="work-company-jobs">
+          <div class="work-job-item">
+            <div>
+              <div class="work-job-title">Rugby League — Nationwide Sound Assist</div>
+              <div class="work-job-desc">Sound assist across nationwide rugby league productions. On-set audio support ensuring clean capture for broadcast output.</div>
+            </div>
+            <div class="work-job-year">Ongoing</div>
+          </div>
+        </div>
       </div>
-      <div class="work-item reveal">
-        <div>
-          <div class="work-title">Vodafone @ Glastonbury</div>
-          <div class="work-sub">Onsite AV Technician · Two consecutive years overseeing AV across guest-facing areas including an exclusive VIP retreat with DJ build. Full-week deployment in a high-profile environment.</div>
+
+      <!-- Cloudbass -->
+      <div class="work-company-block">
+        <div class="work-company-header">
+          <div class="work-company-name">Cloudbass</div>
+          <div class="work-company-type">OB · Broadcast</div>
         </div>
-        <div class="work-tag">Corporate AV</div>
-        <div class="work-year">2023 – 2024</div>
+        <div class="work-company-jobs">
+          <div class="work-job-item">
+            <div>
+              <div class="work-job-title">Premier League Football — Sound Assist</div>
+              <div class="work-job-desc">Nationwide sound assist on live Premier League coverage, supporting broadcast audio teams on high-profile match days.</div>
+            </div>
+            <div class="work-job-year">Ongoing</div>
+          </div>
+          <div class="work-job-item">
+            <div>
+              <div class="work-job-title">British Seniors Snooker — Sound Assist</div>
+              <div class="work-job-desc">Live broadcast sound assist for televised snooker coverage. Precision audio work in a quiet, high-pressure broadcast environment.</div>
+            </div>
+            <div class="work-job-year">Ongoing</div>
+          </div>
+          <div class="work-job-item">
+            <div>
+              <div class="work-job-title">BBC Question Time — Leaders' Special</div>
+              <div class="work-job-desc">Sound assist and boom operator on the nationally-televised 2024 UK General Election leaders' debate. Maintained clean, broadcast-quality audio capture under live conditions.</div>
+            </div>
+            <div class="work-job-year">2024</div>
+          </div>
+        </div>
       </div>
-      <div class="work-item reveal">
-        <div>
-          <div class="work-title">BBC Question Time Leaders' Special</div>
-          <div class="work-sub">Sound Assist / Boom Operator via Cloudbass · Live political debate broadcast. Maintained clean audio capture for a nationally-televised debate under live conditions.</div>
+
+      <!-- NEP Group -->
+      <div class="work-company-block">
+        <div class="work-company-header">
+          <div class="work-company-name">NEP Group</div>
+          <div class="work-company-type">OB · Broadcast</div>
         </div>
-        <div class="work-tag">Broadcast</div>
-        <div class="work-year">2024</div>
-      </div>
-      <div class="work-item reveal">
-        <div>
-          <div class="work-title">Live Football OB · NEP Group</div>
-          <div class="work-sub">Premier League &amp; Championship coverage. Patching and sound support for outside broadcast operations on live sports productions.</div>
+        <div class="work-company-jobs">
+          <div class="work-job-item">
+            <div>
+              <div class="work-job-title">Premier League & Championship Football — Sound Assist</div>
+              <div class="work-job-desc">Patching and sound support for outside broadcast operations on top-flight and championship football. Nationwide coverage, demanding timelines, and high broadcast standards.</div>
+            </div>
+            <div class="work-job-year">Ongoing</div>
+          </div>
         </div>
-        <div class="work-tag">OB · Broadcast</div>
-        <div class="work-year">Ongoing</div>
-      </div>
-      <div class="work-item reveal">
-        <div>
-          <div class="work-title">Iconic Auctioneers</div>
-          <div class="work-sub">Nationwide AV support on a rolling perma-lance basis for high-profile automotive auctions. Audio clarity across live and streamed settings.</div>
-        </div>
-        <div class="work-tag">Corporate · Live Stream</div>
-        <div class="work-year">Ongoing</div>
-      </div>
-      <div class="work-item reveal">
-        <div>
-          <div class="work-title">Rock &amp; Roll Live Events</div>
-          <div class="work-sub">FOH &amp; Monitor Engineer for bands and touring acts. Challenging stage volumes, varied venue acoustics, and tight changeovers.</div>
-        </div>
-        <div class="work-tag">FOH · Monitors</div>
-        <div class="work-year">Ongoing</div>
       </div>
     </div>
+
+    <!-- CORPORATE AV -->
+    <div class="work-category-block reveal">
+      <div class="work-category-label">Corporate AV</div>
+
+      <!-- JaMa Productions -->
+      <div class="work-company-block">
+        <div class="work-company-header">
+          <div class="work-company-name">JaMa Productions</div>
+          <div class="work-company-type">Corporate AV</div>
+        </div>
+        <div class="work-company-jobs">
+          <div class="work-job-item">
+            <div>
+              <div class="work-job-title">Iconic Auctioneers — Nationwide AV Engineer</div>
+              <div class="work-job-desc">Perma-lance AV engineer for Iconic Auctioneers' high-profile live automotive auctions across the UK. Audio clarity across live and streamed settings, ongoing relationship.</div>
+            </div>
+            <div class="work-job-year">Ongoing</div>
+          </div>
+          <div class="work-job-item">
+            <div>
+              <div class="work-job-title">Vodafone @ Glastonbury — AV Technician</div>
+              <div class="work-job-desc">Two consecutive years overseeing AV across Vodafone's exclusive VIP area and Charge &amp; Connect lounge at Glastonbury Festival. Full-week deployment managing guest-facing AV including DJ build for the VIP retreat.</div>
+            </div>
+            <div class="work-job-year">2024 – 2025</div>
+          </div>
+          <div class="work-job-item">
+            <div>
+              <div class="work-job-title">Brighton Pride — AV Technician</div>
+              <div class="work-job-desc">Onsite AV support across two years at one of the UK's largest Pride events, delivering reliable live event production in a large-scale outdoor environment.</div>
+            </div>
+            <div class="work-job-year">2024 – 2025</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other companies -->
+      <div class="work-company-block">
+        <div class="work-company-header">
+          <div class="work-company-name">Also Working With</div>
+          <div class="work-company-type">Corporate AV</div>
+        </div>
+        <div class="work-company-jobs">
+          <div class="work-job-item">
+            <div>
+              <div class="work-job-title">Aztec AV &nbsp;·&nbsp; AT Communications &nbsp;·&nbsp; Immersive AV &nbsp;·&nbsp; Sterling Event Group &nbsp;·&nbsp; Eventurous</div>
+              <div class="work-job-desc">Conferences, hybrid events, breakout rooms, theatre-style productions and corporate shows for a range of clients. Reliable AV operation, strong client communication, and polished delivery across brands and venues nationwide.</div>
+            </div>
+            <div class="work-job-year">Ongoing</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LOCAL ROCK & ROLL -->
+    <div class="work-category-block reveal">
+      <div class="work-category-label">Local Rock &amp; Roll</div>
+
+      <div class="work-company-block">
+        <div class="work-company-header">
+          <div class="work-company-name">Birmingham Live Venues</div>
+          <div class="work-company-type">FOH · Monitors</div>
+        </div>
+        <div class="work-company-jobs">
+          <div class="work-job-item">
+            <div>
+              <div class="work-job-title">FOH, Monitors &amp; Patch — Small Venue Circuit</div>
+              <div class="work-job-desc">Mixing FOH and monitors, running patch for bands and touring acts across Birmingham's small venue circuit — including The Hare &amp; Hounds, The Castle &amp; Falcon, and The Victoria. Tight changeovers, varied acoustics, and real-world mixing in the trenches.</div>
+            </div>
+            <div class="work-job-year">Ongoing</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MISC -->
+    <div class="work-category-block reveal">
+      <div class="work-category-label">Previous Roles</div>
+
+      <div class="work-company-block">
+        <div class="work-company-header">
+          <div class="work-company-name">Square One / Coventry University</div>
+          <div class="work-company-type">In-House Tech</div>
+        </div>
+        <div class="work-company-jobs">
+          <div class="work-job-item">
+            <div>
+              <div class="work-job-title">In-House AV Technician</div>
+              <div class="work-job-desc">Former resident technician for Square One at Coventry University. Day-to-day AV setup, event support, and venue management for a busy campus entertainment venue.</div>
+            </div>
+            <div class="work-job-year">Former</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="work-company-block">
+        <div class="work-company-header">
+          <div class="work-company-name">Warwickshire Cricket</div>
+          <div class="work-company-type">Live Streaming</div>
+        </div>
+        <div class="work-company-jobs">
+          <div class="work-job-item">
+            <div>
+              <div class="work-job-title">In-House Technician — County Cricket Live Streaming</div>
+              <div class="work-job-desc">Technical support for live streaming of county cricket fixtures. End-to-end broadcast operation for a professional sporting organisation.</div>
+            </div>
+            <div class="work-job-year">Former</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <!-- ── SKILLS ── -->
